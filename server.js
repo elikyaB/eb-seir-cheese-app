@@ -35,7 +35,7 @@ mongoose.connection
 //////////////////////////////
 // the cheese schema
 const CheeseSchema = new mongoose.Schema({
-    name: String,
+    name: {type: String, required: true},
     countryOfOrigin: String,
     image: String
 }, {timestamps: true})
